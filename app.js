@@ -278,85 +278,16 @@ const MENU_ITEMS = [
 // State Management
 let activeCategory = "all";
 let searchQuery = "";
-let customImages = {};
-let currentUploadTargetId = null;
-
-try {
-  customImages = JSON.parse(localStorage.getItem("mosobna_custom_images") || "{}");
-} catch(err) {
-  console.warn("Could not read custom images from localStorage:", err);
-  customImages = {};
-}
 
 // DOM Initialization
 document.addEventListener("DOMContentLoaded", () => {
+  try {
+    localStorage.removeItem("mosobna_custom_images");
+  } catch(e) {}
   renderHoursList();
   renderMenuGrid();
   setupEventListeners();
-  applyCustomImagesToExistingCards();
-  initGlobalFilePicker();
 });
-
-// Initialize Global File Input
-function initGlobalFilePicker() {
-  let picker = document.getElementById("global-file-picker");
-  if (!picker) {
-    picker = document.createElement("input");
-    picker.type = "file";
-    picker.id = "global-file-picker";
-    picker.accept = "image/*";
-    picker.style.display = "none";
-    document.body.appendChild(picker);
-  }
-
-  picker.addEventListener("change", function(e) {
-    const file = e.target.files ? e.target.files[0] : null;
-    if (!file || !currentUploadTargetId) return;
-
-    showToast("Processing photo...");
-
-    compressAndResizeImage(file, 900, 675, 0.82, function(compressedBase64) {
-      try {
-        customImages[currentUploadTargetId] = compressedBase64;
-        localStorage.setItem("mosobna_custom_images", JSON.stringify(customImages));
-
-        // Update DOM element directly
-        const card = document.getElementById(currentUploadTargetId);
-        if (card) {
-          const imgEl = card.querySelector(".card-img-wrapper img");
-          if (imgEl) imgEl.src = compressedBase64;
-        }
-
-        renderMenuGrid();
-        showToast("Photo updated successfully!");
-      } catch(err) {
-        console.error("Storage error:", err);
-        showToast("Photo updated on screen!");
-      }
-    });
-  });
-}
-
-// Programmatically trigger photo upload for any card ID
-function triggerPhotoUpload(itemId) {
-  currentUploadTargetId = itemId;
-  const picker = document.getElementById("global-file-picker");
-  if (picker) {
-    picker.value = ""; // Reset value so re-selecting same file triggers change event
-    picker.click();
-  }
-}
-
-// Apply any saved custom uploaded images to static or rendered cards
-function applyCustomImagesToExistingCards() {
-  Object.keys(customImages).forEach(itemId => {
-    const card = document.getElementById(itemId);
-    if (card && customImages[itemId]) {
-      const imgEl = card.querySelector(".card-img-wrapper img");
-      if (imgEl) imgEl.src = customImages[itemId];
-    }
-  });
-}
 
 // Render Operating Hours List
 function renderHoursList() {
@@ -402,29 +333,11 @@ function renderMenuGrid() {
   }
 
   gridElement.innerHTML = filteredItems.map(item => {
-    const hasCustomImg = !!customImages[item.id];
-    const imgSrc = hasCustomImg ? customImages[item.id] : item.image;
-
     return `
       <article class="menu-card" id="${item.id}">
         <div class="card-img-wrapper">
-          <img src="${imgSrc}" alt="${item.name}" loading="lazy" id="img-${item.id}">
+          <img src="${item.image}" alt="${item.name}" loading="lazy" id="img-${item.id}">
           <span class="card-badge">${getCategoryName(item.category)}</span>
-          
-          <div style="position: absolute; bottom: 10px; right: 10px; display: flex; gap: 6px; z-index: 25;">
-            ${hasCustomImg ? `
-              <button class="img-upload-btn" onclick="resetSingleImage('${item.id}')" title="Revert to default dish photo" style="background: rgba(239, 68, 68, 0.85); color: #fff;">
-                Reset
-              </button>
-            ` : ''}
-            <button class="img-upload-btn" onclick="triggerPhotoUpload('${item.id}')" title="Click to upload your custom photo for ${item.name}">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-                <circle cx="12" cy="13" r="4"/>
-              </svg>
-              ${hasCustomImg ? 'Change' : 'Upload Photo'}
-            </button>
-          </div>
         </div>
         <div class="card-body">
           <div class="card-header">
@@ -450,54 +363,6 @@ function getCategoryName(cat) {
     case 'addons': return 'Add-Ons';
     default: return 'Specialty';
   }
-}
-
-// Resizes and compresses uploaded image using Canvas to avoid LocalStorage quota limits
-function compressAndResizeImage(file, maxWidth, maxHeight, quality, callback) {
-  const reader = new FileReader();
-  reader.onload = function(e) {
-    const img = new Image();
-    img.onload = function() {
-      const canvas = document.createElement("canvas");
-      let width = img.width;
-      let height = img.height;
-
-      if (width > height) {
-        if (width > maxWidth) {
-          height = Math.round((height * maxWidth) / width);
-          width = maxWidth;
-        }
-      } else {
-        if (height > maxHeight) {
-          width = Math.round((width * maxHeight) / height);
-          height = maxHeight;
-        }
-      }
-
-      canvas.width = width;
-      canvas.height = height;
-
-      const ctx = canvas.getContext("2d");
-      ctx.drawImage(img, 0, 0, width, height);
-
-      const compressedDataUrl = canvas.toDataURL("image/jpeg", quality);
-      callback(compressedDataUrl);
-    };
-    img.onerror = function() {
-      showToast("Error reading image file.");
-    };
-    img.src = e.target.result;
-  };
-  reader.readAsDataURL(file);
-}
-
-function resetSingleImage(itemId) {
-  delete customImages[itemId];
-  try {
-    localStorage.setItem("mosobna_custom_images", JSON.stringify(customImages));
-  } catch(e) {}
-  renderMenuGrid();
-  showToast("Photo reset to default.");
 }
 
 // Toast notification helper
