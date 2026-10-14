@@ -28,7 +28,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$17.25",
     description: "Spicy, beef, stew cooked with berbere, onions, pepper and garlic.",
-    image: "images/2026-09-19 (7).webp",
+    image: "images/mosobna/RED TIBS.webp",
     tags: ["Spicy", "Beef", "Mains"]
   },
   {
@@ -37,7 +37,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$17.30",
     description: "Mild beef stew cooked onions, pepper, tomato, garlic.",
-    image: "images/2026-09-19 (8).webp",
+    image: "images/mosobna/WHITE TIBS.webp",
     tags: ["Mild", "Beef", "Mains"]
   },
   {
@@ -46,7 +46,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$17.10",
     description: "Spicy, beef, stew tossed with injera.",
-    image: "images/zighini.jpg",
+    image: "images/mosobna/menu.jpg",
     tags: ["Spicy", "Beef", "Injera Tossed"]
   },
   {
@@ -55,7 +55,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$17.10",
     description: "Dried beef spicy stew tossed injera.",
-    image: "images/zighini.jpg",
+    image: "images/mosobna/Qunata Firfir.jpg",
     tags: ["Dried Beef", "Spicy", "Traditional"]
   },
   {
@@ -64,7 +64,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$17.00",
     description: "Slow cooked spicy chicken stew.",
-    image: "images/zighini.jpg",
+    image: "images/mosobna/menu.jpg",
     tags: ["Chicken", "Spicy", "Slow Cooked"]
   },
   {
@@ -73,7 +73,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$19.50",
     description: "Lamb stir-fry with bell peppers, onions and special Eritrean seasonings.",
-    image: "images/tibs.jpg",
+    image: "images/mosobna/menu.jpg",
     tags: ["Chef Special", "Lamb", "Clay Skillet"]
   },
   {
@@ -82,7 +82,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$17.00",
     description: "Bold and spicy beef stew with a berbere spice blend.",
-    image: "images/2026-09-19 (7).webp",
+    image: "images/mosobna/menu.jpg",
     tags: ["Berbere", "Beef Stew", "Spicy"]
   },
   {
@@ -91,7 +91,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$18.50",
     description: "Lamb stir-fry with bell peppers, onions and special Eritrean seasonings",
-    image: "images/IMG-20260917-WA0039.jpg",
+    image: "images/mosobna/Lamb Tibs (Red White).webp",
     tags: ["Lamb", "Red/White"]
   },
   {
@@ -100,7 +100,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$16.00",
     description: "Highly, seasoned, chickpeas cooked with onions, garlic and green chili.",
-    image: "images/2026-09-19 (3).webp",
+    image: "images/mosobna/menu.jpg",
     tags: ["Chickpeas", "Vegetarian", "Seasoned"]
   },
   {
@@ -109,7 +109,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$16.00",
     description: "Red lentil stew Spicy, Onions, tomato, garlic green chili.",
-    image: "images/veggie_platter.jpg",
+    image: "images/mosobna/TUMTUMO.webp",
     tags: ["Red Lentil", "Spicy", "Vegan"]
   },
   {
@@ -118,7 +118,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$17.25",
     description: "Combination of spicy red lentil ,split pea cabbage collard green , mixed veggie and salad.",
-    image: "images/2026-09-19 (2).webp",
+    image: "images/mosobna/VEGGIE PLATTER.webp",
     tags: ["Combination", "Vegan", "Feast"]
   },
   {
@@ -127,7 +127,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$16.00",
     description: "Pasta with tomato sauce, meat sauce, vegetables and meat.",
-    image: "images/pasta.jpg",
+    image: "images/mosobna/menu.jpg",
     tags: ["Pasta", "Meat Sauce"]
   },
 
@@ -138,7 +138,7 @@ const MENU_ITEMS = [
     category: "breakfast",
     price: "$16.00",
     description: "Traditional breakfast dish in Eritrea flatbread tossed in a rich, warm mixture of spiced butter, side yogurt",
-    image: "images/1000308407.jpg",
+    image: "images/mosobna/KICCHA FITFIT.webp",
     tags: ["Eritrean Breakfast", "Spiced Butter", "Yogurt"]
   },
   {
@@ -147,7 +147,7 @@ const MENU_ITEMS = [
     category: "breakfast",
     price: "$16.00",
     description: "With tomatoes, onions, mushrooms, green chili and garlic.",
-    image: "images/IMG-20260813-WA0003.jpg",
+    image: "images/mosobna/SCRAMBLED EGGS.jpg",
     tags: ["Breakfast", "Eggs", "Veggies"]
   },
   {
@@ -156,7 +156,7 @@ const MENU_ITEMS = [
     category: "breakfast",
     price: "$16.00",
     description: "Spicy tomatoes, onions, red pepper, mushrooms, garlic, green chili and two eggs.",
-    image: "images/1000308405.jpg",
+    image: "images/mosobna/SHAKSHUKA.webp",
     tags: ["Spicy", "Two Eggs", "Breakfast"]
   },
   {
@@ -165,7 +165,7 @@ const MENU_ITEMS = [
     category: "breakfast",
     price: "$16.00",
     description: "Fava Beans cooked, served with boiled eggs and fresh tomato cilantro salad",
-    image: "images/2026-09-19 (1).webp",
+    image: "images/mosobna/FUL.webp",
     tags: ["Fava Beans", "Boiled Eggs", "Salad"]
   },
   {
@@ -174,7 +174,7 @@ const MENU_ITEMS = [
     category: "breakfast",
     price: "$8.00",
     description: "Panino Enkulal: bread, butter, garlic, tomato, onions, cucumber, green chili and salad.",
-    image: "images/1000308415.jpg",
+    image: "images/mosobna/EGGS SANDWICH.jpg",
     tags: ["Panino Enkulal", "Sandwich", "Value"]
   },
 
@@ -185,7 +185,7 @@ const MENU_ITEMS = [
     category: "drinks",
     price: "$2.00",
     description: "Herbal tea blend with more than five different spices.",
-    image: "images/shahi.jpg",
+    image: "images/mosobna/SHAHI.jpg",
     tags: ["Hot Tea", "Spiced"]
   },
   {
@@ -194,7 +194,7 @@ const MENU_ITEMS = [
     category: "drinks",
     price: "$3.00",
     description: "Traditional Eritrean coffee.",
-    image: "images/images.jpg",
+    image: "images/mosobna/images.jpg",
     tags: ["Traditional Coffee", "Eritrean"]
   },
   {
@@ -203,7 +203,7 @@ const MENU_ITEMS = [
     category: "drinks",
     price: "$3.50",
     description: "Coffee / Cappuccino.",
-    image: "images/images (1).jpg",
+    image: "images/mosobna/images (1).jpg",
     tags: ["Coffee", "Cappuccino"]
   },
   {
@@ -212,7 +212,7 @@ const MENU_ITEMS = [
     category: "drinks",
     price: "$2.00",
     description: "Pure bottled drinking water.",
-    image: "images/dasani-water-049000026566-64_600.avif",
+    image: "images/mosobna/dasani-water-049000026566-64_600.avif",
     tags: ["Bottled Water"]
   },
   {
@@ -221,7 +221,7 @@ const MENU_ITEMS = [
     category: "drinks",
     price: "$4.50",
     description: "Mango and raspberry blended with lime juice and ice",
-    image: "images/smoothie.jpg",
+    image: "images/mosobna/smoothie.jpg",
     tags: ["Fresh Fruit", "Smoothie"]
   },
   {
@@ -230,7 +230,7 @@ const MENU_ITEMS = [
     category: "drinks",
     price: "$2.50",
     description: "Selection of cold soft drinks.",
-    image: "images/soft-drinks-375ml-200041_800x.jpg",
+    image: "images/mosobna/soft-drinks-375ml-200041_800x.jpg",
     tags: ["Cold Drink"]
   },
 
@@ -241,7 +241,7 @@ const MENU_ITEMS = [
     category: "alcohol",
     price: "$4.50",
     description: "Chilled bottled beer.",
-    image: "images/DSC_0720.jpg",
+    image: "images/mosobna/DSC_0720.jpg",
     tags: ["Beer", "Cold Alcohol"]
   },
   {
@@ -250,7 +250,7 @@ const MENU_ITEMS = [
     category: "alcohol",
     price: "$5.00",
     description: "Glass of red or white house wine.",
-    image: "images/cellar-tonic-520ml-red-wine-glass-set-of-6-cellar-him-1020843-18503029850184.webp",
+    image: "images/mosobna/cellar-tonic-520ml-red-wine-glass-set-of-6-cellar-him-1020843-18503029850184.webp",
     tags: ["Wine", "Glass"]
   },
   {
@@ -259,7 +259,7 @@ const MENU_ITEMS = [
     category: "alcohol",
     price: "$4.00",
     description: "Premium whiskey shot.",
-    image: "images/images.webp",
+    image: "images/mosobna/images.webp",
     tags: ["Spirits", "Whiskey"]
   },
 
@@ -270,7 +270,7 @@ const MENU_ITEMS = [
     category: "addons",
     price: "$2.00",
     description: "Roll of injera flatbread.",
-    image: "images/injera-sq.jpg",
+    image: "images/mosobna/injera-sq.jpg",
     tags: ["Add-On", "Flatbread"]
   }
 ];
