@@ -45,7 +45,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
   font-size: 16px;
+}
+
+section[id], div[id] {
+  scroll-margin-top: 90px;
 }
 
 body {
@@ -279,16 +284,16 @@ img {
 /* Hero Section */
 .hero {
   position: relative;
-  min-height: 90vh;
+  min-height: 82vh;
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding: 130px 0 60px;
   background: linear-gradient(to right, rgba(15, 14, 13, 0.92) 40%, rgba(15, 14, 13, 0.65)),
               url('images/hero.jpg') center/cover no-repeat;
 }
 
 .hero-content {
-  max-width: 650px;
+  max-width: 680px;
 }
 
 .badge-tag {
@@ -308,7 +313,7 @@ img {
 }
 
 .hero-content h1 {
-  font-size: 3.75rem;
+  font-size: clamp(2.4rem, 4.5vw, 3.5rem);
   line-height: 1.15;
   margin-bottom: 1.25rem;
 }
@@ -380,14 +385,15 @@ img {
 
 /* Highlights Grid */
 .highlights-bar {
-  margin-top: -50px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   position: relative;
   z-index: 10;
 }
 
 .highlights-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
 }
 
@@ -625,7 +631,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  align-items: center;
+  align-items: start;
 }
 
 .hours-card {
@@ -892,11 +898,22 @@ img {
   .nav-links {
     display: none;
   }
+  .navbar .container {
+    height: 70px;
+  }
+  .hero {
+    padding: 100px 0 40px;
+    min-height: auto;
+  }
   .hero-content h1 {
-    font-size: 2.35rem;
+    font-size: 2.2rem;
   }
   .section-title h2 {
-    font-size: 2.1rem;
+    font-size: 2rem;
+  }
+  .highlights-bar {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   .menu-grid {
     grid-template-columns: 1fr;
