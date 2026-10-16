@@ -37,7 +37,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$17.30",
     description: "Mild beef stew cooked onions, pepper, tomato, garlic.",
-    image: "images/mosobna/WHITE TIBS.webp",
+    image: "images/mosobna/WHITE TIBS2.webp",
     tags: ["Mild", "Beef", "Mains"]
   },
   {
@@ -73,7 +73,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$19.50",
     description: "Lamb stir-fry with bell peppers, onions and special Eritrean seasonings.",
-    image: "images/mosobna/menu.jpg",
+    image: "images/mosobna/SHEKLA TIBS.jpg",
     tags: ["Chef Special", "Lamb", "Clay Skillet"]
   },
   {
