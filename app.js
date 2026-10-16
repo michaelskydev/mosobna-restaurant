@@ -138,7 +138,7 @@ const MENU_ITEMS = [
     category: "breakfast",
     price: "$16.00",
     description: "Traditional breakfast dish in Eritrea flatbread tossed in a rich, warm mixture of spiced butter, side yogurt",
-    image: "images/mosobna/KICCHA FITFIT.webp",
+    image: "images/mosobna/KICCHA FITFIT.jpg",
     tags: ["Eritrean Breakfast", "Spiced Butter", "Yogurt"]
   },
   {
@@ -185,7 +185,7 @@ const MENU_ITEMS = [
     category: "drinks",
     price: "$2.00",
     description: "Herbal tea blend with more than five different spices.",
-    image: "images/mosobna/SHAHI.jpg",
+    image: "images/mosobna/shahi.jpg",
     tags: ["Hot Tea", "Spiced"]
   },
   {
@@ -283,7 +283,7 @@ let searchQuery = "";
 document.addEventListener("DOMContentLoaded", () => {
   try {
     localStorage.removeItem("mosobna_custom_images");
-  } catch(e) {}
+  } catch (e) { }
   renderHoursList();
   renderMenuGrid();
   setupEventListeners();
@@ -317,8 +317,8 @@ function renderMenuGrid() {
   const filteredItems = MENU_ITEMS.filter(item => {
     const matchesCategory = activeCategory === "all" || item.category === activeCategory;
     const matchesSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          item.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          item.tags.some(t => t.toLowerCase().includes(searchQuery.toLowerCase()));
+      item.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      item.tags.some(t => t.toLowerCase().includes(searchQuery.toLowerCase()));
     return matchesCategory && matchesSearch;
   });
 
@@ -426,7 +426,7 @@ function resetMenuFilters() {
   searchQuery = "";
   const searchInput = document.getElementById("menu-search-input");
   if (searchInput) searchInput.value = "";
-  
+
   const tabBtns = document.querySelectorAll(".tab-btn");
   tabBtns.forEach(b => {
     b.classList.toggle("active", b.dataset.category === "all");
