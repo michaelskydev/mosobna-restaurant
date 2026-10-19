@@ -64,7 +64,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$17.00",
     description: "Slow cooked spicy chicken stew.",
-    image: "images/mosobna/menu.jpg",
+    image: "images/mosobna/derho.jpeg",
     tags: ["Chicken", "Spicy", "Slow Cooked"]
   },
   {
@@ -82,7 +82,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$17.00",
     description: "Bold and spicy beef stew with a berbere spice blend.",
-    image: "images/mosobna/menu.jpg",
+    image: "images/mosobna/key-Wot.jpg",
     tags: ["Berbere", "Beef Stew", "Spicy"]
   },
   {
@@ -100,7 +100,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$16.00",
     description: "Highly, seasoned, chickpeas cooked with onions, garlic and green chili.",
-    image: "images/mosobna/menu.jpg",
+    image: "images/mosobna/shiro.jpeg",
     tags: ["Chickpeas", "Vegetarian", "Seasoned"]
   },
   {
@@ -203,7 +203,7 @@ const MENU_ITEMS = [
     category: "drinks",
     price: "$3.50",
     description: "Coffee / Cappuccino.",
-    image: "images/mosobna/images (1).jpg",
+    image: "images/mosobna/coffee2.jpeg",
     tags: ["Coffee", "Cappuccino"]
   },
   {
@@ -212,7 +212,7 @@ const MENU_ITEMS = [
     category: "drinks",
     price: "$2.00",
     description: "Pure bottled drinking water.",
-    image: "images/mosobna/dasani-water-049000026566-64_600.avif",
+    image: "images/mosobna/water.jpg",
     tags: ["Bottled Water"]
   },
   {
@@ -241,7 +241,7 @@ const MENU_ITEMS = [
     category: "alcohol",
     price: "$4.50",
     description: "Chilled bottled beer.",
-    image: "images/mosobna/DSC_0720.jpg",
+    image: "images/mosobna/beer.jpg",
     tags: ["Beer", "Cold Alcohol"]
   },
   {
