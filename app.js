@@ -82,7 +82,7 @@ const MENU_ITEMS = [
     category: "mains",
     price: "$17.00",
     description: "Bold and spicy beef stew with a berbere spice blend.",
-    image: "images/mosobna/Key-Wot.jpg",
+    image: "images/mosobna/keh wot.jpeg",
     tags: ["Berbere", "Beef Stew", "Spicy"]
   },
   {
