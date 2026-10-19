@@ -1,0 +1,5 @@
+# Robots.txt for Mosobna Bar & Restaurant
+User-agent: *
+Allow: /
+
+Sitemap: https://www.mosobna.com/sitemap.xml

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#241a15" />
+      <stop offset="100%" stop-color="#0e0c0b" />
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd56b" />
+      <stop offset="50%" stop-color="#f4b236" />
+      <stop offset="100%" stop-color="#c27d0e" />
+    </linearGradient>
+    <linearGradient id="spice" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e06020" />
+      <stop offset="100%" stop-color="#9a280c" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Circular Base -->
+  <circle cx="60" cy="60" r="58" fill="url(#bg)" stroke="url(#gold)" stroke-width="3" />
+  <circle cx="60" cy="60" r="53" fill="none" stroke="url(#gold)" stroke-width="1" stroke-dasharray="3,3" opacity="0.6" />
+  
+  <!-- Iconic Conical Mosob Lid & Bowl Motif -->
+  <!-- Top Finial Knob -->
+  <circle cx="60" cy="27" r="4.5" fill="url(#gold)" />
+  
+  <!-- Conical Woven Hat/Lid -->
+  <path d="M60 31 L78 62 L42 62 Z" fill="url(#gold)" opacity="0.95" />
+  <!-- Pattern stripes across lid -->
+  <path d="M51 46 L69 46 L73 54 L47 54 Z" fill="url(#spice)" opacity="0.9" />
+  
+  <!-- Middle Rim -->
+  <rect x="38" y="62" width="44" height="4" rx="2" fill="url(#gold)" />
+  
+  <!-- Woven Base Basket -->
+  <path d="M40 66 L80 66 L74 86 L46 86 Z" fill="url(#gold)" />
+  <!-- Pattern on Base -->
+  <path d="M44 71 L76 71 L72 80 L48 80 Z" fill="url(#spice)" />
+  
+  <!-- Foot Stand -->
+  <rect x="44" y="87" width="32" height="4" rx="1.5" fill="url(#gold)" />
+  
+  <!-- Stylized "M" Letter Underneath or subtly embossed -->
+  <path d="M54 74 L60 81 L66 74" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+  
+  <!-- Bottom Text MOSOBNA -->
+  <text x="60" y="104" text-anchor="middle" font-family="'Cinzel', serif, sans-serif" font-size="9" font-weight="700" letter-spacing="2.5" fill="url(#gold)">MOSOBNA</text>
+</svg>
