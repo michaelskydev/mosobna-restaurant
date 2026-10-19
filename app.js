@@ -185,7 +185,7 @@ const MENU_ITEMS = [
     category: "drinks",
     price: "$2.00",
     description: "Herbal tea blend with more than five different spices.",
-    image: "images/mosobna/shahi.jpg",
+    image: "images/mosobna/SHAHI.jpg",
     tags: ["Hot Tea", "Spiced"]
   },
   {
