@@ -9,6 +9,7 @@ const RESTAURANT_DATA = {
   phone: "902-4209159",
   email: "mosobnabar@gmail.com",
   facebook: "https://www.facebook.com/share/1CLBEqqSE7/",
+  googleBusiness: "https://share.google/FWtYqqvW8QvGr98tl",
   hours: [
     { day: "Monday", open: "10:30", close: "22:30", display: "10:30 AM – 10:30 PM", dayIdx: 1 },
     { day: "Tuesday", open: "10:30", close: "22:30", display: "10:30 AM – 10:30 PM", dayIdx: 2 },
