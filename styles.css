@@ -155,7 +155,7 @@ img {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  object-fit: contain;
+  object-fit: cover;
   background: #000;
   border: 2px solid var(--amber-gold);
   box-shadow: 0 4px 18px rgba(244, 178, 54, 0.3);
@@ -204,7 +204,7 @@ img {
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  object-fit: contain;
+  object-fit: cover;
   border: 2px solid var(--amber-gold);
   box-shadow: 0 4px 15px rgba(244, 178, 54, 0.25);
 }
